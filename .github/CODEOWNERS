@@ -1,0 +1,13 @@
+# .github/CODEOWNERS
+
+# Global fallback - tech lead reviews everything
+*                         @tech-lead
+
+# Each developer owns their app
+/apps/app-one/            @dev-juan-ortegon
+/apps/app-two/            @dev-david-cruz
+/apps/app-three/          @dev-oscar-suarez
+/apps/app-four/           @dev-john-ramirez
+
+# Shared libs require tech lead approval
+/libs/shared/             @tech-lead

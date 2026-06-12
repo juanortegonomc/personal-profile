@@ -1,0 +1,31 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/app-one"
+    },
+    {
+      "path": "./apps/app-two"
+    },
+    {
+      "path": "./apps/app-three"
+    },
+    {
+      "path": "./apps/app-four"
+    },
+    {
+      "path": "./libs/shared/ui"
+    },
+    {
+      "path": "./libs/shared/utils"
+    },
+    {
+      "path": "./libs/shared/data-access"
+    },
+    {
+      "path": "./libs/shared/types"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@org/app-one",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "tags": [
+      "scope:app-one",
+      "owner:dev1"
+    ]
+  }
+}
