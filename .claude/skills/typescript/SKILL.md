@@ -5,7 +5,7 @@ description: >
   Trigger: When writing TypeScript, defining types/interfaces, or using utility types.
 license: Apache-2.0
 metadata:
-  version: "1.0"
+  version: '1.0'
 format: reference
 ---
 
@@ -27,7 +27,7 @@ const USER_ROLES = {
   GUEST: 'guest',
 } as const;
 
-type UserRole = typeof USER_ROLES[keyof typeof USER_ROLES];
+type UserRole = (typeof USER_ROLES)[keyof typeof USER_ROLES];
 // UserRole = 'admin' | 'user' | 'guest'
 
 // ❌ Avoid: direct union types lose runtime values
@@ -219,16 +219,16 @@ console.log(user.name);
 
 ## Quick Reference
 
-| Task | Pattern |
-|------|---------|
-| Union from object | `typeof OBJ[keyof typeof OBJ]` |
-| Optional fields | `Partial<T>` |
-| Pick fields | `Pick<T, 'a' \| 'b'>` |
-| Exclude fields | `Omit<T, 'password'>` |
-| Type guard | `value is Type` |
-| Type-only import | `import type { T }` |
-| Readonly | `Readonly<T>` or `as const` |
-| Generic constraint | `<T extends object>` |
+| Task               | Pattern                        |
+| ------------------ | ------------------------------ |
+| Union from object  | `typeof OBJ[keyof typeof OBJ]` |
+| Optional fields    | `Partial<T>`                   |
+| Pick fields        | `Pick<T, 'a' \| 'b'>`          |
+| Exclude fields     | `Omit<T, 'password'>`          |
+| Type guard         | `value is Type`                |
+| Type-only import   | `import type { T }`            |
+| Readonly           | `Readonly<T>` or `as const`    |
+| Generic constraint | `<T extends object>`           |
 
 ## Rules
 

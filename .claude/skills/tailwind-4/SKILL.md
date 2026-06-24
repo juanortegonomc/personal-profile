@@ -5,7 +5,7 @@ description: >
   Trigger: When styling with Tailwind, using className, conditional styles, or dark mode.
 license: Apache-2.0
 metadata:
-  version: "1.0"
+  version: '1.0'
 format: reference
 ---
 
@@ -207,14 +207,14 @@ const CHART_COLORS = {
 
 ## Quick Reference
 
-| Task | Pattern |
-|------|---------|
-| Semantic color | `bg-primary`, `text-foreground` |
-| Conditional | `cn('base', condition && 'variant')` |
-| Variants | `cva('base', { variants: ... })` |
-| Dark mode | `dark:bg-slate-900` |
-| Responsive | `sm:` `md:` `lg:` `xl:` |
-| Runtime value | `style={{ width: \`${val}%\` }}` |
+| Task              | Pattern                                       |
+| ----------------- | --------------------------------------------- |
+| Semantic color    | `bg-primary`, `text-foreground`               |
+| Conditional       | `cn('base', condition && 'variant')`          |
+| Variants          | `cva('base', { variants: ... })`              |
+| Dark mode         | `dark:bg-slate-900`                           |
+| Responsive        | `sm:` `md:` `lg:` `xl:`                       |
+| Runtime value     | `style={{ width: \`${val}%\` }}`              |
 | External override | Accept and apply `className` prop with `cn()` |
 
 ## Rules

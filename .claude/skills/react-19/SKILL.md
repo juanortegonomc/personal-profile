@@ -5,7 +5,7 @@ description: >
   Trigger: When building React components, using hooks, working with forms, or server/client components.
 license: Apache-2.0
 metadata:
-  version: "1.0"
+  version: '1.0'
 format: reference
 ---
 
@@ -196,13 +196,13 @@ export default function Page() {
 
 ## Quick Reference
 
-| Feature | React 18 | React 19 |
-|---------|----------|----------|
-| Memoization | Manual useMemo/useCallback | Automatic (Compiler) |
-| Promises | useEffect + useState | use() hook |
-| Forms | onSubmit handler | Server Actions + useActionState |
-| Refs in components | forwardRef | ref as prop |
-| Conditional context | ❌ Not possible | ✅ use() |
+| Feature             | React 18                   | React 19                        |
+| ------------------- | -------------------------- | ------------------------------- |
+| Memoization         | Manual useMemo/useCallback | Automatic (Compiler)            |
+| Promises            | useEffect + useState       | use() hook                      |
+| Forms               | onSubmit handler           | Server Actions + useActionState |
+| Refs in components  | forwardRef                 | ref as prop                     |
+| Conditional context | ❌ Not possible            | ✅ use()                        |
 
 ## Rules
 
