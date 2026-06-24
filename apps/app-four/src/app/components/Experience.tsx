@@ -5,8 +5,12 @@ export default function Experience() {
     <section id="experience" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
-          <p className="text-violet-400 font-mono text-sm uppercase tracking-widest mb-2">03 / Experience</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Work History</h2>
+          <p className="text-violet-400 font-mono text-sm uppercase tracking-widest mb-2">
+            03 / Experience
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
+            Work History
+          </h2>
         </div>
 
         <div className="relative">
@@ -22,11 +26,15 @@ export default function Experience() {
                 <div className="glass rounded-2xl p-6 glass-hover">
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                     <div>
-                      <h3 className="text-white font-semibold text-lg">{job.role}</h3>
+                      <h3 className="text-white font-semibold text-lg">
+                        {job.role}
+                      </h3>
                       <p className="gradient-text font-medium">{job.company}</p>
                     </div>
                     <div className="text-right">
-                      <span className="text-white/50 text-sm block">{job.period}</span>
+                      <span className="text-white/50 text-sm block">
+                        {job.period}
+                      </span>
                       <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/20">
                         {job.type}
                       </span>
