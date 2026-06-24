@@ -13,14 +13,12 @@ describe('App', () => {
     expect(baseElement).toBeTruthy();
   });
 
-  it('should have a greeting as the title', () => {
-    const { getAllByText } = render(
+  it('should render the portfolio hero section', () => {
+    const { getByText } = render(
       <BrowserRouter>
         <App />
       </BrowserRouter>,
     );
-    expect(
-      getAllByText(new RegExp('Welcome @org/app-four', 'gi')).length > 0,
-    ).toBeTruthy();
+    expect(getByText('David Miguel Cruz Ramos')).toBeTruthy();
   });
 });
